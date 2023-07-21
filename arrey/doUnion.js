@@ -12,7 +12,6 @@ class Solution {
         }
         return a.length + b.length - common;
     }
-
 }
 
 const ins = new Solution();
