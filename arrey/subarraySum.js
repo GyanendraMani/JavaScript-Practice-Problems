@@ -10,7 +10,7 @@ class Solution {
 
             if (currentSum === s) {
                 console.log("Sum found at indexes " + i);
-                return [i];
+                return [i + 1];
             }
             else {
                 // Try all subarrays starting with 'i'
@@ -19,13 +19,13 @@ class Solution {
                     if (currentSum == s) {
                         console.log("Sum found between indexes "
                             + i + " and " + j);
-                        return [i, j];
+                        return [i + 1, j + 1];
                     }
                 }
             }
         }
         console.log("No subarray found");
-        return [];
+        return [-1];
     }
 }
 
